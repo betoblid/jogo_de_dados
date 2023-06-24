@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do Dado</title>
+    <meta name="author" content="Desenvolvido por Herbert projeto do youtube para trino de JS">
+    <meta name="description" content="É um jogo de dado onde apertamos o botão jogar e o dado será rolado apos termina ira vim a númeração do dado.. Tenha um bom jogo e se divirta-se">
+    <meta name="robots" content="index">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Jogo do Dado</h1>
+    </header>
+    <main>
+        <section id="jogo">
+            <div class="container-dado">
+                <div id="number_dado">
+                    ?
+                </div>
+                <div id="box_img_dado">
+                    <audio id="box_audio" src=""></audio>
+                    <img id="img_dado" class="" src="dado/0.png" alt="">
+                </div>
+                <div class="btn_jogo">
+                    <button id="btn_button" class="">Jogar</button>
+                </div>
+            </div>
+        </section>
+        <section id="sobre">
+            <h2>como funciona o jogo</h2>
+            <p>basicamente é um jogo onde você aperta jogar e o dado é jogado ele rola até parar em uma númeração do dado após parar esse número de dado será passado em sua tela</p>
+            <p>Ás númerações que possa ser que caia são essas</p>
+            <figure>
+                <img src="dado/faces-dado.png" alt="face dos dados">
+                <figcaption>todas os dados que possa ser que caia</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; - Desenvolvido por <a href="">Herbert Souza</a></p>
+    </footer>
+    <script src="jogo.js"></script>
+</body>
+</html>

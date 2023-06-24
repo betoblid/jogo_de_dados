@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    margin: 20px auto;
+}
+.container-dado, #sobre, header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+img{
+    width: 250px;
+}
+header h1{
+    font: 900 29px Arial;
+}
+#number_dado{
+    background: rebeccapurple;
+    padding: 5px 10px;
+    border-radius: 100%;
+    color: white;
+    font-weight: 900;
+    margin: 10px auto;
+}
+.btn_jogo button{
+    margin: 20px auto;
+    padding: 3px 30px;
+    font: 900 14px Arial;
+    color: white;
+    background: rgb(88, 120, 179);
+    border-radius: 20px;
+}
+#sobre h2{
+    font: 900 18px Arial;
+    margin: 10px auto;
+}
+#sobre p{
+    width: 70%;
+    text-align: justify;
+    font: 500 14px Arial;
+    margin: 10px auto;
+}
+#sobre img{
+    width: 300px;
+}
+#sobre figure, footer{
+    font: 700 12px Arial;
+    color: rgb(88, 87, 87);
+}
+footer{
+    text-align: center;
+    margin: 10px auto;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+footer a:hover{
+    color: rebeccapurple;
+}
+/*parte que sera manipulado por javascript*/
+.off{
+    display: none;
+}
+.animations{
+    animation: rolando 2.5s infinite;    
+}
+
+@keyframes rolando {
+    0%{
+        margin: 20px 0;
+        transform: rotate(0deg);
+    }
+    35%{
+        transform: rotate(290deg);
+        margin: 20px 0;
+    }
+    70%{
+        transform: rotate(-290deg);
+        margin: 20px 0;
+    }
+    100%{
+        transform: rotate(0deg);
+        margin: 0px;
+    }
+}
+@media(max-width: 500px){
+    .box_img_dado img{
+        width: 60%;
+    }
+}
