@@ -6,18 +6,22 @@
 header{
     margin: 20px auto;
 }
+/*alinhando todo o conteudo da pagina no centro poderia usar o body mas preferir usar por teg para caso no futuro queira trocar algo de lugar*/
 .container-dado, #sobre, header{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column wrap;
 }
+/*todas as imagens da pagina tera 250px*/
 img{
     width: 250px;
 }
+/*texto do header formatado com 29px*/
 header h1{
     font: 900 29px Arial;
 }
+/*estilizando onde aparecerá o numero sorteado */
 #number_dado{
     background: rebeccapurple;
     padding: 5px 10px;
@@ -26,31 +30,43 @@ header h1{
     font-weight: 900;
     margin: 10px auto;
 }
+/*estilizando o botão jogar da pagina*/
 .btn_jogo button{
     margin: 20px auto;
-    padding: 3px 30px;
+    padding: 7px 30px;
     font: 900 14px Arial;
     color: white;
     background: rgb(88, 120, 179);
     border-radius: 20px;
+    border: none;
 }
+/*ao passar o mouse esse efeito será passado na tela*/
+.btn_jogo button:hover{
+    box-shadow: 3px 3px 6px rebeccapurple;
+    background: rgb(80, 110, 161);
+}
+/*title secundario da sessão sobre tará esse efeito*/
 #sobre h2{
     font: 900 18px Arial;
     margin: 10px auto;
 }
+/*todos os paragrafos da sessão sobre terá esse efeito*/
 #sobre p{
     width: 70%;
     text-align: justify;
     font: 500 14px Arial;
     margin: 10px auto;
 }
+/*todas as imagens sobre terá esse tamanho*/
 #sobre img{
     width: 300px;
 }
+/*o efeito da legenda da imagem e do rodape terá esse efeito*/
 #sobre figure, footer{
     font: 700 12px Arial;
     color: rgb(88, 87, 87);
 }
+/*esse efeito é do rodape com a formatação do link*/
 footer{
     text-align: center;
     margin: 10px auto;
@@ -70,6 +86,7 @@ footer a:hover{
     animation: rolando 2.5s infinite;    
 }
 
+/*dando o efeito que aparecerá na imagem*/
 @keyframes rolando {
     0%{
         margin: 20px 0;
@@ -88,6 +105,7 @@ footer a:hover{
         margin: 0px;
     }
 }
+/*adicionando um responsivo nas telas abaixo de 500px*/
 @media(max-width: 500px){
     .box_img_dado img{
         width: 60%;
